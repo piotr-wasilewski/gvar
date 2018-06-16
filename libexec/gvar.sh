@@ -63,6 +63,9 @@ for option in "$@"; do
   esac
 done
 
+# if parameter is not set
 if [[ $# == 0 ]]; then
+  echo "List of vars in $FILE"
+  echo "--------"
   cat "$FILE"
 fi
